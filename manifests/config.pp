@@ -10,7 +10,7 @@
 #
 # Ayoub Elhamdani <a.elhamdani90@gmail.com>
 #
-class openswan::config {
+class openswan::config inherits openswan::params {
 
   file { $openswan::ipsec_conf:
     ensure  => file,
